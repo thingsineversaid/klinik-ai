@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b35">
+  <meta name="description" content="KLINIK AI - Asisten cerdas untuk membantu mendiagnosis dan menyelesaikan masalah teknologi.">
+  <title>KLINIK AI — Smart Technology Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="Klinik AI beranda">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span><b>KLINIK<span>AI</span></b><small>TECH SUPPORT CENTER</small></span>
+      </a>
+      <div class="side-label">MENU UTAMA</div>
+      <nav class="nav-menu">
+        <button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span> Beranda</button>
+        <button class="nav-item" data-page="diagnosis"><span class="nav-icon">⌕</span> Diagnosis Masalah</button>
+        <button class="nav-item" data-page="knowledge"><span class="nav-icon">▤</span> Pusat Pengetahuan</button>
+        <button class="nav-item" data-page="history"><span class="nav-icon">◷</span> Riwayat Diagnosis</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card">
+          <div class="help-icon">✦</div>
+          <b>Butuh bantuan?</b>
+          <p>Mulai diagnosis dan temukan solusi untuk masalah perangkatmu.</p>
+          <button class="help-link" data-go="diagnosis">Mulai sekarang <span>→</span></button>
+        </div>
+        <div class="sidebar-foot"><span class="status-dot"></span> Sistem bantuan aktif <small>Versi 1.0</small></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Buka menu">☰</button>
+        <div class="breadcrumb">Workspace <span>/</span> <b id="breadcrumbTitle">Beranda</b></div>
+        <div class="top-actions">
+          <span class="online-pill"><i></i> ONLINE</span>
+          <div class="avatar">K</div>
+        </div>
+      </header>
+
+      <section class="page active" id="page-home">
+        <div class="welcome-row">
+          <div>
+            <div class="eyebrow"><span class="spark">✦</span> SMART TECHNOLOGY ASSISTANT</div>
+            <h1>Halo! Ada masalah<br><span>teknologi hari ini?</span></h1>
+            <p class="lead">Jangan khawatir. Ceritakan masalah perangkatmu, dan KLINIK AI akan membantumu menemukan jalan keluarnya.</p>
+            <button class="primary-btn" data-go="diagnosis">Mulai Diagnosis <span>→</span></button>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="hero-glow"></div>
+            <div class="hero-chip chip-one">✦ AI</div><div class="hero-chip chip-two">✓ READY</div>
+            <div class="device-card">
+              <div class="device-top"><span></span><span></span><span></span><b>DIAGNOSTIC AI</b></div>
+              <div class="device-brain">✳</div>
+              <div class="scan-line"></div>
+              <div class="device-lines"><i></i><i></i><i></i></div>
+              <div class="device-bottom"><span>System check</span><b>100%</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card"><div class="stat-icon blue">⌕</div><div><strong>06</strong><span>Kategori bantuan</span></div></div>
+          <div class="stat-card"><div class="stat-icon purple">✦</div><div><strong>24/7</strong><span>Akses mandiri</span></div></div>
+          <div class="stat-card"><div class="stat-icon green">✓</div><div><strong>Step by step</strong><span>Panduan solusi</span></div></div>
+        </div>
+
+        <div class="section-heading">
+          <div><div class="eyebrow">PILIH KATEGORI</div><h2>Apa yang ingin kamu perbaiki?</h2></div>
+          <button class="text-btn" data-go="diagnosis">Lihat semua <span>→</span></button>
+        </div>
+        <div class="category-grid">
+          <button class="category-card" data-category="computer"><span class="category-icon c-blue">▣</span><b>Komputer & Laptop</b><small>Lambat, hang, tidak menyala</small><span class="card-arrow">↗</span></button>
+          <button class="category-card" data-category="printer"><span class="category-icon c-orange">▤</span><b>Printer</b><small>Offline, gagal cetak, tinta</small><span class="card-arrow">↗</span></button>
+          <button class="category-card" data-category="internet"><span class="category-icon c-purple">⌁</span><b>Internet & Jaringan</b><small>Wi-Fi, koneksi, jaringan</small><span class="card-arrow">↗</span></button>
+          <button class="category-card" data-category="files"><span class="category-icon c-green">▧</span><b>File & Dokumen</b><small>File rusak, tidak terbuka</small><span class="card-arrow">↗</span></button>
+          <button class="category-card" data-category="software"><span class="category-icon c-pink">▦</span><b>Aplikasi & Software</b><small>Error, aplikasi macet</small><span class="card-arrow">↗</span></button>
+          <button class="category-card" data-category="security"><span class="category-icon c-yellow">◇</span><b>Keamanan Digital</b><small>Phishing, tautan mencurigakan</small><span class="card-arrow">↗</span></button>
+        </div>
+
+        <div class="bottom-banner">
+          <div><span class="banner-kicker">SMART TIP OF THE DAY</span><h3>Sudah mencoba restart perangkatmu?</h3><p>Langkah sederhana ini dapat menyelesaikan beberapa masalah sementara pada komputer dan perangkat jaringan.</p></div>
+          <div class="banner-symbol">↻</div>
+        </div>
+      </section>
+
+      <section class="page" id="page-diagnosis">
+        <div class="page-heading"><div class="eyebrow">SMART DIAGNOSTIC</div><h1>Diagnosis <span>Masalah</span></h1><p class="lead">Pilih kategori dan ceritakan gejala yang kamu alami. Kami akan membantu menyusun langkah pemeriksaan.</p></div>
+        <div class="diagnostic-layout">
+          <div class="diagnostic-main">
+            <div class="panel">
+              <div class="panel-title"><span class="step-number">01</span><div><h3>Pilih kategori perangkat</h3><p>Di mana masalah terjadi?</p></div></div>
+              <div class="choice-grid" id="diagnosisCategories">
+                <button class="choice active" data-category="computer"><span>▣</span><b>Komputer & Laptop</b></button>
+                <button class="choice" data-category="printer"><span>▤</span><b>Printer</b></button>
+                <button class="choice" data-category="internet"><span>⌁</span><b>Internet & Jaringan</b></button>
+                <button class="choice" data-category="files"><span>▧</span><b>File & Dokumen</b></button>
+                <button class="choice" data-category="software"><span>▦</span><b>Aplikasi</b></button>
+                <button class="choice" data-category="security"><span>◇</span><b>Keamanan Digital</b></button>
+              </div>
+              <div class="form-divider"></div>
+              <div class="panel-title"><span class="step-number">02</span><div><h3>Ceritakan masalahmu</h3><p>Gunakan bahasa sehari-hari, tidak perlu istilah teknis.</p></div></div>
+              <label for="problemInput">Deskripsi masalah</label>
+              <textarea id="problemInput" rows="4" placeholder="Contoh: Printer saya menyala, tetapi ketika mencetak dokumen muncul tulisan printer offline..."></textarea>
+              <div class="input-hint"><span>✦</span> Semakin jelas gejalanya, semakin relevan panduannya.</div>
+              <div class="quick-examples"><span>Coba contoh:</span><button data-example="Komputer saya terasa sangat lambat saat dibuka.">Komputer lambat</button><button data-example="Printer saya offline dan tidak bisa mencetak.">Printer offline</button><button data-example="Wi-Fi tersambung tetapi tidak ada internet.">Wi-Fi bermasalah</button></div>
+              <button class="primary-btn full-btn" id="analyzeBtn">✦ Analisis Masalah <span>→</span></button>
+            </div>
+            <div class="result-panel hidden" id="resultPanel" aria-live="polite"></div>
+          </div>
+          <aside class="diagnostic-aside">
+            <div class="aside-card assistant-card"><div class="assistant-avatar">✳</div><span class="mini-label">KLINIK AI ASSISTANT</span><h3>Teman teknologimu siap membantu.</h3><p>Ikuti langkah pemeriksaan satu per satu. Jika belum berhasil, lanjutkan ke langkah berikutnya.</p><div class="assistant-status"><i></i> Assistant siap</div></div>
+            <div class="aside-card"><h4>Tips sebelum diagnosis</h4><ul class="tips-list"><li>Catat pesan error yang muncul.</li><li>Periksa kabel dan sumber daya.</li><li>Jangan buru-buru menghapus data.</li><li>Siapkan informasi perangkat.</li></ul></div>
+            <div class="safety-note"><span>ⓘ</span><p>Panduan bersifat umum. Untuk kerusakan fisik atau masalah data penting, hubungi teknisi profesional.</p></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page" id="page-knowledge">
+        <div class="page-heading"><div class="eyebrow">KNOWLEDGE BASE</div><h1>Pusat <span>Pengetahuan</span></h1><p class="lead">Tips praktis untuk menjaga perangkat dan aktivitas digital tetap aman.</p></div>
+        <div class="knowledge-search"><span>⌕</span><input id="knowledgeSearch" placeholder="Cari tips, misalnya printer, password, backup..."></div>
+        <div class="knowledge-grid" id="knowledgeGrid">
+          <article class="knowledge-card" data-search="printer offline cetak"><div class="knowledge-art art-blue">▤</div><div class="knowledge-content"><span class="article-tag">PRINTER</span><h3>5 langkah mengatasi printer offline</h3><p>Kenali penyebab umum printer tidak terdeteksi dan cara memeriksanya.</p><button data-article="printer">Baca panduan →</button></div></article>
+          <article class="knowledge-card" data-search="password keamanan akun"><div class="knowledge-art art-purple">◇</div><div class="knowledge-content"><span class="article-tag">KEAMANAN</span><h3>Cara membuat password yang kuat</h3><p>Lindungi akun dengan kata sandi unik dan autentikasi dua faktor.</p><button data-article="password">Baca panduan →</button></div></article>
+          <article class="knowledge-card" data-search="backup data file harddisk"><div class="knowledge-art art-green">▧</div><div class="knowledge-content"><span class="article-tag">DATA</span><h3>Pentingnya backup data berkala</h3><p>Kurangi risiko kehilangan dokumen penting dengan kebiasaan backup.</p><button data-article="backup">Baca panduan →</button></div></article>
+          <article class="knowledge-card" data-search="phishing email penipuan tautan"><div class="knowledge-art art-orange">⚠</div><div class="knowledge-content"><span class="article-tag">LITERASI DIGITAL</span><h3>Kenali tanda-tanda phishing</h3><p>Waspadai pesan palsu yang mencoba mencuri informasi pribadi.</p><button data-article="phishing">Baca panduan →</button></div></article>
+          <article class="knowledge-card" data-search="komputer lambat performa"><div class="knowledge-art art-pink">▣</div><div class="knowledge-content"><span class="article-tag">KOMPUTER</span><h3>Membuat komputer bekerja lebih ringan</h3><p>Beberapa kebiasaan sederhana untuk menjaga performa perangkat.</p><button data-article="slow">Baca panduan →</button></div></article>
+          <article class="knowledge-card" data-search="wifi jaringan internet router"><div class="knowledge-art art-yellow">⌁</div><div class="knowledge-content"><span class="article-tag">JARINGAN</span><h3>Tips dasar mengatasi Wi-Fi</h3><p>Periksa koneksi, router, dan pengaturan jaringan secara bertahap.</p><button data-article="wifi">Baca panduan →</button></div></article>
+        </div>
+        <div class="article-detail hidden" id="articleDetail"></div>
+      </section>
+
+      <section class="page" id="page-history">
+        <div class="page-heading"><div class="eyebrow">YOUR ACTIVITY</div><h1>Riwayat <span>Diagnosis</span></h1><p class="lead">Lihat kembali pemeriksaan yang pernah kamu lakukan di perangkat ini.</p></div>
+        <div class="history-panel"><div class="history-head"><div><h3>Diagnosis terakhir</h3><p>Riwayat tersimpan secara lokal di browser.</p></div><button class="outline-btn" id="clearHistory">Hapus riwayat</button></div><div id="historyList"></div></div>
+      </section>
+
+      <footer class="footer"><span>© 2026 KLINIK AI</span><span>Built to make technology easier. <b>✦</b></span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
